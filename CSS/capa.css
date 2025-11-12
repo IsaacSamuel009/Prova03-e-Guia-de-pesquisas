@@ -1,0 +1,58 @@
+/* -------------------- ESTILOS GERAIS -------------------- */
+body {
+    /* Define a fonte pixelada como padrão para o corpo, mas será sobreescrito para o botão */
+    font-family: 'Press Start 2P', monospace; 
+    background-color: #000000; /* Fundo preto */
+    margin: 0;
+    color: #ffffff; /* Cor de texto padrão para o corpo, se houver outro texto */
+    text-align: center;
+}
+
+/* -------------------- ESTILOS DO CABEÇALHO -------------------- */
+header {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 20px; /* Mantém o tamanho original */
+    color: rgb(223, 25, 25); /* Mantém a cor original */
+    border-bottom: 2px solid #c42020; /* Mantém a borda original */
+}
+
+header h1 {
+    /* Aplica a fonte pixelada e o efeito de sombra para o texto */
+    font-family: 'Press Start 2P', cursive; /* Garante a fonte para o H1 */
+    /* Efeito de sombra para simular contorno pixelado e um leve brilho */
+    text-shadow: 
+        -2px -2px 0 #000, /* Contorno preto */
+        2px -2px 0 #000, 
+        -2px 2px 0 #000, 
+        2px 2px 0 #000,
+        0 0 8px rgba(223, 25, 25, 0.8), /* Leve brilho na cor do texto */
+        0 0 15px rgba(223, 25, 25, 0.5); /* Brilho maior */
+}
+      
+/* -------------------- ESTILOS DA IMAGEM (ORIGINAL) -------------------- */
+.perfil-container img {
+    width: 800px;
+    height: auto;
+    border-radius: 50%; /* Mantido o arredondamento original */
+    box-shadow: 0 58px 29px rgb(214, 13, 13); /* Mantida a sombra original */
+    display: block;
+    margin: 20px auto;
+}
+
+/* -------------------- ESTILOS DO BOTÃO (ORIGINAL) -------------------- */
+main {
+    text-align: center;
+    margin-top: 150px;
+}
+
+main button {
+    background-color: #68a3d6; /* Mantido o verde original */
+    color: rgb(0, 0, 0); /* Mantida a cor do texto original */
+    padding: 30px 60px;
+    border: none;
+    border-radius: 18px; /* Mantido o arredondamento original */
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 4px}

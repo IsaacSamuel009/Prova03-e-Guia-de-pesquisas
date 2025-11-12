@@ -1,0 +1,207 @@
+/*
+ * Arquivo: style.css
+ * Tema: Pixel Art / Interface Retro Console
+ */
+
+
+/* ------------------ Base e Tipografia ------------------ */
+
+
+/* Tenta usar uma fonte de pixel (Press Start 2P), senão usa Courier para o efeito monoespaçado */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+:root {
+    /* Paleta de Cores Retro (Inspirada em interfaces de terminal ou Windows 95) */
+    --cor-fundo: #172447; /* Cinza claro de interface antiga */
+    --cor-primaria: #008080; /* Azul/Ciano Teal clássico (Cor de destaque) */
+    --cor-secundaria: #c4b928; /* Vermelho Game Over */
+    --cor-texto: #9297c8;
+    --cor-texto-claro: #ffffff;
+    --borda-shadow: 4px; /* Tamanho do efeito 3D pixelado */
+}
+
+
+body {
+    background-color: var(--cor-fundo);
+    /* Tenta carregar a fonte pixelada, senão usa Courier/monospace */
+    font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 20px;
+    font-size: 10px; /* Tamanho da fonte reduzido para dar mais efeito pixelado */
+}
+
+
+/* Redefine o tamanho da fonte para leitura em telas grandes, se necessário */
+@media (min-width: 1024px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+
+/* ------------------ Layout Principal ------------------ */
+
+
+/* Centraliza e dá uma "moldura" ao conteúdo */
+body > * {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    font-size: 2.5em;
+    color: var(--cor-secundaria);
+    text-shadow: 2px 2px 0 #880000; /* Sombra sólida para efeito 3D */
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    font-size: 1.8em;
+    color: var(--cor-primaria);
+    margin: 30px 0 15px;
+    border-bottom: 2px solid var(--cor-primaria);
+    padding-bottom: 5px;
+}
+
+
+h3 {
+    font-size: 1.2em;
+    color: var(--cor-texto);
+    margin-top: 20px;
+}
+
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+/* Linha separadora com efeito 3D */
+hr {
+    border: none;
+    height: 10px;
+    background-color: var(--cor-fundo);
+    margin: 20px 0;
+    /* Simula uma barra divisória do Windows 95 */
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #808080;
+}
+
+
+/* ------------------ Navegação e Links ------------------ */
+
+
+nav a, body > a { /* Aplica estilo a todos os links de navegação */
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    transition: all 0.1s;
+}
+
+
+nav a:hover, body > a:hover {
+    color: var(--cor-texto-claro);
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-texto-claro);
+}
+
+
+/* ------------------ Tabelas (Tabela de Consoles) ------------------ */
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    /* Borda externa com efeito 3D */
+    border: 3px solid #5fb2b2;
+}
+
+
+th, td {
+    border: 1px solid #808080;
+    padding: 8px;
+    text-align: left;
+}
+
+
+thead th {
+    background-color: var(--cor-primaria);
+    color:#9297c8;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #bb5a5a;
+}
+
+
+tfoot td {
+    background-color: #a0a0a0;
+    font-style: italic;
+    color: #444;
+}
+
+
+/* ------------------ Listas (Jogos e Recursos) ------------------ */
+
+
+ul, ol {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+
+/* Efeito de 'cursor' para a lista não ordenada */
+ul li::marker {
+    content: "▶ ";
+    color: var(--cor-secundaria);
+}
+
+
+/* ------------------ Galeria de Imagens ------------------ */
+
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+figure {
+    /* Efeito de moldura grossa e pixelada para as imagens */
+    border: 4px solid var(--cor-texto);
+    padding: 5px;
+    background-color: #e0e0e0;
+    margin: 0;
+    flex: 1 1 200px;
+    max-width: 300px;
+}
+
+
+figure img {
+    /* Garante que o CSS não suavize as imagens, preservando a pixel art se a imagem for pixelada */
+    image-rendering: pixelated;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+figcaption {
+    text-align: center;
+    padding-top: 8px;
+    font-style: italic;
+    color: var(--cor-primaria);
+    font-size: 0.9em;
+}
+
+
