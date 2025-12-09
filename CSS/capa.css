@@ -1,6 +1,22 @@
+/*Deixa a tabela de consoles alinhada ao sentro*/
+#consoles {
+    color: #ffe600;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*Deixa o sobre nos alinhado a esquerda*/
+#sobre {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* -------------------- LINKS -------------------- */
 a {
-    color: #ffe600; /* Azul neon padrão */
+    color: #ffe600; /* verde-limão neon padrão */
     text-decoration: none;
     font-family: 'Press Start 2P', monospace;
     transition: color 0.3s ease-in-out;
