@@ -1,27 +1,3 @@
-.pixel-title{
-  font-family: 'Silkscreen', monospace;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 1px;
-  color: #00ff66;
-  text-shadow:
-    0 0 3px #00ff66,
-    0 0 10px #ff2d2d;
-}
-@font-face {
-  font-family: 'MyPixelFont';
-  src: url('/fonts/mypixelfont.woff2') format('woff2'),
-       url('/fonts/mypixelfont.woff') format('woff');
-  font-display: swap;
-}
-
-.pixel-title {
-  font-family: 'MyPixelFont', monospace;
-  font-size: 48px;
-  letter-spacing: 2px;
-  color: #00ff66;
-}
-
 
 /* -------------------- ESTILOS GERAIS -------------------- */
 body {
