@@ -1,3 +1,19 @@
+/* -------------------- LINKS -------------------- */
+a {
+    color: #ffe600; /* Azul neon padrão */
+    text-decoration: none;
+    font-family: 'Press Start 2P', monospace;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    color: #ff007f; /* Rosa neon ao passar o mouse ou focar */
+}
+
+a:active {
+    color: #39ff14; /* Verde neon ao clicar */
+}
 
 /* -------------------- ESTILOS GERAIS -------------------- */
 body {
@@ -13,7 +29,7 @@ header {
     text-align: center;
     padding: 50px 0;
     font-size: 20px;
-    color: #ff0040; /* Vermelho neon */
+    color: #ffe600; /* Vermelho neon */
     border-bottom: 2px solid #ff007f;
 }
 
