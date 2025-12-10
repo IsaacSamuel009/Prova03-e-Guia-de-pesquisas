@@ -1,3 +1,11 @@
+/*Vai deixa galeria de cor amarela e mais bonita*/
+#galeria h3,
+#galeria p {
+    color: #ffe600;
+    font-family: 'Press Start 2P', monospace;
+    text-shadow: 0 0 5px #ffe600, 0 0 10px #ff007f;
+}
+
 /* -------------------- SEÇÃO CONSOLES -------------------- */
 #consoles {
     color: #ffe600; /** Define a cor padrão do texto dentro da seção consoles (amarelo neon) **/
