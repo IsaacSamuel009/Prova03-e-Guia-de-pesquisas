@@ -85,10 +85,12 @@ main button:hover {
 }
 
 .emoji {
-    font-size: 2em;              /* Usa unidade relativa ao elemento pai */
-    vertical-align: middle;      /* Alinha verticalmente com o texto */
-    line-height: 1;              /* Evita espaçamento extra */
+  display: inline-flex;
+  align-items: center; /* centraliza dentro do span */
+  justify-content: center;
+  font-size: 2em;
 }
+
 
 
 
