@@ -1,0 +1,178 @@
+/*Vai deixa galeria de cor amarela e mais bonita*/
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza imagem e legenda */
+    margin: 30px auto; /* Espaço entre figuras e centralização */
+    max-width: 300px; /* Limita a largura para manter proporção */
+}
+
+figure img {
+    width: 100%; /* Ocupa toda a largura do figure */
+    max-width: 300px; /* Tamanho máximo da imagem */
+    height: auto; /* Mantém proporção */
+    border: 4px solid #39ff14; /* Borda verde neon opcional */
+    box-shadow: 0 0 25px #39ff14, 0 0 50px #ff007f; /* Sombra neon */
+}
+
+figcaption {
+    margin-top: 10px;
+    font-family: 'Press Start 2P', monospace;
+    color: #ffe600;
+    text-shadow: 0 0 5px #ffe600, 0 0 10px #ff007f;
+    text-align: center;
+}
+
+#galeria  { 
+    color: #ffe600;
+    font-family: 'Press Start 2P', monospace;
+    text-shadow: 0 0 5px #ffe600, 0 0 10px #ff007f; /** Define a cor padrão do texto dentro da seção consoles (amarelo neon) **/
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center; /** Centraliza o conteúdo da seção **/
+    max-width: 800px; /** Limita a largura máxima da seção para não ficar muito esticado em telas grandes **/
+    margin: 0 auto; /** Centraliza horizontalmente a seção na página **/
+    padding: 20px; /** Espaçamento interno para dar "respiro" ao conteúdo **/
+    
+}
+
+/* -------------------- SEÇÃO CONSOLES -------------------- */
+#consoles  {
+    color: #ffe600;
+    font-family: 'Press Start 2P', monospace;
+    text-shadow: 0 0 5px #ffe600, 0 0 10px #ff007f; /** Define a cor padrão do texto dentro da seção consoles (amarelo neon) **/
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center; /** Centraliza o conteúdo da seção **/
+    max-width: 800px; /** Limita a largura máxima da seção para não ficar muito esticado em telas grandes **/
+    margin: 0 auto; /** Centraliza horizontalmente a seção na página **/
+    padding: 20px; /** Espaçamento interno para dar "respiro" ao conteúdo **/
+}
+
+#consoles table {
+    width: 100%; /** Faz a tabela ocupar toda a largura disponível da seção **/
+    border-collapse: collapse; /** Remove espaços entre as bordas das células **/
+    color: white; /** Define a cor do texto da tabela como branco **/
+    margin: 0 auto; /** Centraliza a tabela dentro da seção **/
+}
+
+#consoles th,
+#consoles td {
+    text-align: center; /** Centraliza o texto dentro das células **/
+    padding: 10px; /** Espaçamento interno nas células para melhor leitura **/
+    border: 1px solid white; /** Adiciona borda branca em cada célula **/
+}
+
+/* -------------------- SEÇÃO SOBRE NÓS -------------------- */
+#sobre {
+    text-align: left; /** Alinha o texto à esquerda para leitura mais natural **/
+    max-width: 800px; /** Limita a largura máxima da seção **/
+    margin: 0 auto; /** Centraliza horizontalmente a seção **/
+    padding: 20px; /** Espaçamento interno **/
+}
+
+/* -------------------- LINKS -------------------- */
+a {
+    color: #ffe600; /** Cor padrão dos links (amarelo neon) **/
+    text-decoration: none; /** Remove o sublinhado padrão dos links **/
+    font-family: 'Press Start 2P', monospace; /** Fonte retrô para os links **/
+    transition: color 0.3s ease-in-out; /** Transição suave ao mudar de cor **/
+}
+
+a:hover,
+a:focus {
+    color: #ff007f; /** Rosa neon quando o link é focado ou passa o mouse **/
+}
+
+a:active {
+    color: #39ff14; /** Verde neon quando o link é clicado **/
+}
+
+/* -------------------- ESTILOS GERAIS -------------------- */
+body {
+    font-family: 'Press Start 2P', monospace; /** Fonte padrão do corpo do site **/
+    background: linear-gradient(180deg, #0d0d0d, #1a0033); /** Fundo com gradiente escuro (preto para roxo) **/
+    margin: 0; /** Remove margens padrão do navegador **/
+    color: #ffffff; /** Texto padrão branco **/
+    text-align: center; /** Centraliza textos por padrão **/
+}
+
+p {
+    font-family: 'Share Tech Mono', monospace; /** Fonte escolhida para parágrafos (retrô, mas legível) **/
+    font-size: 1.3em; /** Aumenta o tamanho da fonte dos parágrafos **/
+    line-height: 1.6; /** Espaçamento entre linhas para melhor leitura **/
+    color: #ffffff; /** Texto branco **/
+}
+
+/* -------------------- CABEÇALHO -------------------- */
+header {
+    text-align: center; /** Centraliza o conteúdo do cabeçalho **/
+    padding: 35px 0; /** Espaçamento vertical (reduzido de 50px para 35px) **/
+    font-size: 20px; /** Tamanho da fonte para os links do cabeçalho **/
+    color: #ffe600; /** Cor amarela neon **/
+    border-bottom: 2px solid #ff007f; /** Linha rosa neon abaixo do cabeçalho **/
+}
+
+header h1 {
+    font-size: 1.6em; /** Tamanho do título principal (moderado) **/
+    font-family: 'Press Start 2P', cursive; /** Fonte retrô pixelada para o título **/
+    text-shadow: 
+        0 0 5px #ff0040,
+        0 0 15px #ff007f,
+        0 0 25px #ff007f,
+        0 0 40px #ff007f; /** Efeito de brilho neon no título **/
+    animation: neonGlow 2s infinite alternate; /** Animação de brilho alternando cores **/
+}
+
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 10px #ff0040, 0 0 20px #ff007f; /** Brilho inicial em vermelho/rosa **/
+    }
+    to {
+        text-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14; /** Brilho final em verde neon **/
+    }
+}
+
+/* -------------------- IMAGEM -------------------- */
+.perfil-container img {
+    width: 600px; /** Largura fixa da imagem **/
+    height: auto; /** Altura proporcional à largura **/
+    border: 4px solid #39ff14; /** Borda verde neon **/
+    box-shadow: 0 0 25px #39ff14, 0 0 50px #ff007f; /** Sombra neon verde e rosa **/
+    display: block; /** Faz a imagem se comportar como bloco **/
+    margin: 40px auto; /** Centraliza a imagem com margem superior/inferior **/
+}
+
+/* -------------------- BOTÃO -------------------- */
+main {
+    text-align: center; /** Centraliza conteúdo principal **/
+    margin-top: 100px; /** Espaçamento superior **/
+}
+
+main button {
+    background: linear-gradient(135deg, #ff007f, #39ff14); /** Fundo degradê neon rosa/verde **/
+    color: #fff; /** Texto branco **/
+    padding: 25px 50px; /** Espaçamento interno do botão **/
+    border: 3px solid #000; /** Borda preta **/
+    border-radius: 12px; /** Bordas arredondadas **/
+    cursor: pointer; /** Cursor de mão ao passar o mouse **/
+    font-size: 1.2em; /** Tamanho da fonte do botão **/
+    font-family: 'Press Start 2P', monospace; /** Fonte retrô **/
+    text-shadow: 2px 2px #000; /** Sombra preta no texto **/
+    box-shadow: 0 0 15px #ff007f, 0 0 25px #39ff14; /** Sombra neon rosa/verde **/
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out; /** Transição suave ao interagir **/
+}
+
+main button:hover {
+    transform: scale(1.1); /** Aumenta o botão levemente ao passar o mouse **/
+    box-shadow: 0 0 25px #39ff14, 0 0 40px #ff007f; /** Intensifica o brilho neon ao hover **/
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+    margin-top: 80px; /** Espaçamento superior do rodapé **/
+    padding: 20px; /** Espaçamento interno **/
+    font-size: 12px; /** Fonte pequena para rodapé **/
+    color: #ffe600; /** Texto amarelo neon **/
+    text-shadow: 0 0 5px #ffe600, 0 0 10px #ff007f; /** Efeito de brilho neon no rodapé **/
+}
