@@ -85,9 +85,11 @@ main button:hover {
 }
 
 .emoji {
-    font-size: 200%; /** Aumenta o tamanho do emoji em relação ao texto **/
-    vertical-align: middle; /** Alinha o emoji verticalmente com o texto **/
+    font-size: 2em;              /* Usa unidade relativa ao elemento pai */
+    vertical-align: middle;      /* Alinha verticalmente com o texto */
+    line-height: 1;              /* Evita espaçamento extra */
 }
+
 
 
 main button:hover {
@@ -103,3 +105,4 @@ footer {
     color: #ffe600; /** Texto amarelo neon **/
     text-shadow: 0 0 5px #ffe600, 0 0 10px #ff007f; /** Efeito de brilho neon no rodapé **/
 }
+
