@@ -13,7 +13,7 @@
 
 :root {
     /* Paleta de Cores Retro (Inspirada em interfaces de terminal ou Windows 95) */
-    --cor-fundo: red
+    --cor-fundo: linear-gradient(180deg, #0d0d0d, #1a0033); /** Fundo com gradiente escuro (preto para roxo) **/
     --cor-primaria: #008080; /* Azul/Ciano Teal clássico (Cor de destaque) */
     --cor-secundaria: #c4b928; /* Vermelho Game Over */
     --cor-texto: #9297c8;
@@ -52,7 +52,7 @@ body > * {
 
 
 h1 {
-    font-size: 2.5em;
+    font-size: 1.6em;
     color: var(--cor-secundaria);
     text-shadow: 2px 2px 0 #880000; /* Sombra sólida para efeito 3D */
     margin-bottom: 20px;
