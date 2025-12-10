@@ -8,7 +8,7 @@
 
 /* -------------------- SEÇÃO CONSOLES -------------------- */
 #consoles {
-    color: #ffe600; /** Define a cor padrão do texto dentro da seção consoles (amarelo neon) **/
+    color: #ffe600, 0 0 10px #ff007f; /** Define a cor padrão do texto dentro da seção consoles (amarelo neon) **/
     text-align: center; /** Centraliza o conteúdo da seção **/
     max-width: 800px; /** Limita a largura máxima da seção para não ficar muito esticado em telas grandes **/
     margin: 0 auto; /** Centraliza horizontalmente a seção na página **/
