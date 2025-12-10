@@ -72,35 +72,40 @@ figure img {
 }
 
 /* -------------------- BOTÃO -------------------- */
-main button {
-    background: linear-gradient(135deg, #ff007f, #39ff14);
-    color: #fff;
-    padding: 20px 40px;
-    border: 3px solid #000;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 0.9em;
-    font-family: 'Press Start 2P', monospace;
-    text-shadow: 2px 2px #000;
-    box-shadow: 0 0 15px #ff007f, 0 0 25px #39ff14;
-    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
-
-    /* ✨ Centralização perfeita do texto ✨ */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.botao-guia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  background: linear-gradient(135deg, #ff007f, #39ff14);
+  color: #fff;
+  padding: 35px 70px;
+  border: 3px solid #000;
+  border-radius: 12px;
+  font-size: 1.1em;
+  font-family: 'Press Start 2P', monospace;
+  text-shadow: 2px 2px #000;
+  box-shadow: 0 0 15px #ff007f, 0 0 25px #39ff14;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  max-width: 500px;
+  width: fit-content;
+  margin: 0 auto;
 }
 
-main button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 25px #39ff14, 0 0 40px #ff007f;
+
+.botao-guia:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #39ff14, 0 0 40px #ff007f;
 }
 
 .emoji {
-    font-size: 200%;
-    vertical-align: middle;
+  font-size: 1.5em;
+  line-height: 1;
 }
+
+
+
 
 /* -------------------- FOOTER -------------------- */
 footer {
@@ -114,14 +119,18 @@ footer {
 /* -------------------------------------------------------- */
 /* ----------- ALINHAMENTO DOS LABELS DO FORMULÁRIO ------- */
 /* -------------------------------------------------------- */
-
-form label {
-    display: block;
-    text-align: left;
-    margin-left: 20px;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 1.1em;
+/* Ex.: se seu formulário tiver um id #contato */
+#contato form label,
+form .label-destaque,
+form > label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffe600;
+  text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f;
 }
+
+
 
 form {
     text-align: left;
