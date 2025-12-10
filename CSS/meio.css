@@ -127,10 +127,10 @@ header h1 {
 @keyframes neonGlow {
     from {
         text-shadow: 0 0 10px #ff0040, 0 0 20px #ff007f; /** Brilho inicial em vermelho/rosa **/
-    }
+        }
     to {
         text-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14; /** Brilho final em verde neon **/
-    }
+        }
 }
 
 /* -------------------- IMAGEM -------------------- */
@@ -141,13 +141,13 @@ header h1 {
     box-shadow: 0 0 25px #39ff14, 0 0 50px #ff007f; /** Sombra neon verde e rosa **/
     display: block; /** Faz a imagem se comportar como bloco **/
     margin: 40px auto; /** Centraliza a imagem com margem superior/inferior **/
-}
+    }
 
 /* -------------------- BOTÃO -------------------- */
 main {
     text-align: center; /** Centraliza conteúdo principal **/
     margin-top: 100px; /** Espaçamento superior **/
-}
+    }
 
 main button {
     background: linear-gradient(135deg, #ff007f, #39ff14); /** Fundo degradê neon rosa/verde **/
@@ -161,13 +161,12 @@ main button {
     text-shadow: 2px 2px #000; /** Sombra preta no texto **/
     box-shadow: 0 0 15px #ff007f, 0 0 25px #39ff14; /** Sombra neon rosa/verde **/
     transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out; /** Transição suave ao interagir **/
-}
-
+    }
+    
 main button:hover {
     transform: scale(1.1); /** Aumenta o botão levemente ao passar o mouse **/
     box-shadow: 0 0 25px #39ff14, 0 0 40px #ff007f; /** Intensifica o brilho neon ao hover **/
-}
-
+    }
 /* -------------------- FOOTER -------------------- */
 footer {
     margin-top: 80px; /** Espaçamento superior do rodapé **/
