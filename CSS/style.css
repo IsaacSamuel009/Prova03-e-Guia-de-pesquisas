@@ -13,7 +13,7 @@
 
 :root {
     /* Paleta de Cores Retro (Inspirada em interfaces de terminal ou Windows 95) */
-    --cor-fundo: linear-gradient(180deg, #0d0d0d, #1a0033); /** Fundo com gradiente escuro (preto para roxo) **/
+    --cor-fundo: red
     --cor-primaria: #008080; /* Azul/Ciano Teal clássico (Cor de destaque) */
     --cor-secundaria: #c4b928; /* Vermelho Game Over */
     --cor-texto: #9297c8;
